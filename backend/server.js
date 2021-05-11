@@ -648,4 +648,4 @@ app.get('/getLocation', (req, res) => {
 )
 
 
-app.listen(1234);
+app.listen(process.env.PORT);
