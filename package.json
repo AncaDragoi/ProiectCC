@@ -20,4 +20,7 @@
     "scripts": {
         "start": "cd ./ server && node server.js"
     }
+    "engines": {
+    "node": "14.x"
+  }
 }
