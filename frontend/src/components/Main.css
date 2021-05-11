@@ -1,0 +1,20 @@
+.sparkle {
+	
+	font-size:20px;
+	font-family:impact;
+	
+ -webkit-text-fill-color: transparent;
+ background: -webkit-linear-gradient(transparent, transparent),
+             url(https://78.media.tumblr.com/1c6d938a0aeefd7742aa9fe355d87605/tumblr_oks619dXHK1vqv4puo1_500.gif) repeat;
+ background: -o-linear-gradient(transparent, transparent);
+ -webkit-background-clip: text;
+ padding-right: 10px;
+ position: absolute;
+}
+.Main{
+	text-align: center;
+}
+
+.menuButtons{
+	margin-left: 20px;
+  }

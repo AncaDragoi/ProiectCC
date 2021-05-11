@@ -1,0 +1,20 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "description": "Project",
+  "main": "server.js",
+  "author": {
+    "name": "Bianca Virtopeanu"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "geoip-lite": "^1.2.1",
+    "ip": "^1.1.5",
+    "mysql2": "^1.5.1",
+    "node-where": "^1.1.0",
+    "public-ip": "^2.4.0",
+    "sequelize": "^4.22.11",
+    "unirest": "^0.5.1"
+  }
+}

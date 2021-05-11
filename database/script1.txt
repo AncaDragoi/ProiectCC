@@ -1,0 +1,56 @@
+select * from wwhotspot_sequelize.countries;
+
+select * from stories;
+
+select * from users;
+
+select * from countries;
+
+select * from continents;
+
+INSERT INTO continents (name, createdAt,updatedAt,CONTINENT_CODE) VALUES ('Africa', now(), now(),'AF');
+ INSERT INTO continents (name, createdAt,updatedAt,CONTINENT_CODE) VALUES ('Asia', now(), now(),'AS');
+ INSERT INTO continents (name, createdAt,updatedAt,CONTINENT_CODE) VALUES ('Europe', now(), now(),'EU');
+ INSERT INTO continents (name, createdAt,updatedAt,CONTINENT_CODE) VALUES ('North America', now(), now(),'NA');
+ INSERT INTO continents (name, createdAt,updatedAt,CONTINENT_CODE) VALUES ('South America', now(), now(),'SA');
+  INSERT INTO continents (name, createdAt,updatedAt,CONTINENT_CODE) VALUES('Oceania', now(), now(),'OC');
+  INSERT INTO continents (name, createdAt,updatedAt,CONTINENT_CODE) VALUES('Antarctica', now(), now(),'AN');
+
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Democratic Republic of the Congo', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Libya', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Madagascar', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Malawi', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Guinea', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Mauritius', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Niger', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Egypt', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Botswana', now(), now(),1);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Georgia', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Nepal', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Afganistan', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Thailand', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Turkey', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Philippines', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Maldives', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Azerbaijan', now(), now(),2);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('France', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Romania', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Spain', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Portugal', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Italy', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Germany', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Prague', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Finland', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('United Kingdom', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Belgium', now(), now(),3);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Canada', now(), now(),4);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Costa Rica', now(), now(),4);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Jamaica', now(), now(),4);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Mexico', now(), now(),4);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Unites States of America', now(), now(),4);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Venezuela', now(), now(),5);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Uruguay', now(), now(),5);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Argentina', now(), now(),5);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Australlia', now(), now(),6);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('New Zeeland', now(), now(),6);
+INSERT INTO countries (name, createdAt,updatedAt, continentId) VALUES ('Fiji', now(), now(),6);

@@ -1,0 +1,130 @@
+
+GHID UTILIZARE SERVICII BACKEND
+
+Legenda: POST, PUT, GET DELETE
+*Operatiile se pot testa in Postman.
+*Trebuie sa existe server de mySql pe acelasi host.
+USER
+?	 http://localhost:1234/create => se creeaza tabelele
+?	 http://localhost:1234/user => setati in Postman operatia de POST, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"fname":"Ion",
+	"lname":"Popescu",
+	"age":"20",
+	"email":"ion@gmail.com",
+	"password":"parolaLuiIon",
+	"phone":"078652577"
+}
+?	 http://localhost:1234/users => se afiseaza sub forma de json toti utilizatorii din bd
+?	  http://localhost:1234/user/1 => se afiseaza primul utilizator
+4. http://localhost:1234/user/1=> setati in Postman operatia de PUT, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"fname":"Ion-Gabriel",
+	"lname":"Popescu",
+	"age":"20",
+	"email":"iongabriel@gmail.com",
+	"password":"parolaLuiIon",
+	"phone":"078652577"
+}
+
+?	 http://localhost:1234/user/1=> setati in Postman operatia de DELETE , se va sterge primul utilizator, apoi rulati din nou comanda de POST de mai sus
+
+ISTORIC
+?	 http://localhost:1234/history => setati in Postman operatia de POST, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"searchedText":"Constanta",
+	"userId":"1"
+}
+?	 http://localhost:1234/allHistory=> se afiseaza sub forma de json toate inregistrarile de istoric din bd
+?	 http://localhost:1234/historyOfUser?userId=1 => se afiseaza istoricul utilizatorului 1
+?	 http://localhost:1234/history/1> setati in Postman operatia de PUT, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"searchedText":"Alba-Iulia",
+	"userId":"1"
+}
+
+?	 http://localhost:1234/history/2=> setati in Postman operatia de DELETE , se va sterge primul utilizator
+?	http://localhost:1234/history/1=> se va afisa primul istoric
+
+CONTINENT
+?	 http://localhost:1234/continent => setati in Postman operatia de POST, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"name":"Europa"
+}
+?	 http://localhost:1234/continents afiseaza sub forma de json toate inregistrarile de continente din bd
+?	 http://localhost:1234/continent/1=> se afiseaza continentul cu id=1
+?	 http://localhost:1234/continent/1> setati in Postman operatia de PUT, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{	
+"name":"EU"
+}
+
+?	 http://localhost:1234/continent/1=> setati in Postman operatia de DELETE , se va sterge primul utilizator
+
+COUNTRY
+
+?	 http://localhost:1234/country=> setati in Postman operatia de POST, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"name":"Romania",
+	"continentId":"1"
+}
+?	 http://localhost:1234/countries afiseaza sub forma de json toate inregistrarile de continente din bd
+?	 http://localhost:1234/country/1=> se afiseaza continentul cu id=1
+?	 http://localhost:1234/country/1> setati in Postman operatia de PUT, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{	
+"name":"RO",
+"continentId":"1"
+}
+
+?	 http://localhost:1234/country/1=> setati in Postman operatia de DELETE , se va sterge primul utilizator
+
+PLACE
+?	 http://localhost:1234/place=> setati in Postman operatia de POST, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"name":"BV",
+	"countryId":"1"
+}
+?	 http://localhost:1234/places afiseaza sub forma de json toate inregistrarile de continente din bd
+?	 http://localhost:1234/place/1=> se afiseaza continentul cu id=1
+?	 http://localhost:1234/place/1> setati in Postman operatia de PUT, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{	
+"name":"Brasov",
+"countryId":"1"
+}
+
+?	 http://localhost:1234/place/1=> setati in Postman operatia de DELETE , se va sterge primul utilizator
+
+STORY
+?	 http://localhost:1234/story=> setati in Postman operatia de POST, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{
+	"text":"Am avut o experienta minunata in targul de Craciun de la Brasov!",
+	"likes":"20",
+	"dislikes":"1",
+	"userId":"1",
+	"deleted":"false"
+
+}
+?	 http://localhost:1234/stories afiseaza sub forma de json toate inregistrarile de continente din bd
+?	 http://localhost:1234/story/1=> se afiseaza continentul cu id=1
+?	 http://localhost:1234/story/1> setati in Postman operatia de PUT, iar la Headers: Content-Type: application/json si in body setati raw si introduceti urmatorul json:
+{	
+	"text":"Am avut o experienta minunata in targul de Craciun de la Brasov!",
+	"likes":"25",
+	"dislikes":"1",
+	"userId":"1",
+	"deleted":"false"
+}
+
+?	 http://localhost:1234/story/1=> setati in Postman operatia de DELETE , se va sterge primul utilizator
+
+WEBCAM TRAVEL API
+?	http://localhost:1234/webcamByBbox?neLat=45.657975&neLng=45.657975&swLat=45.657975&swLng=25.601198 => webcam-uri de la o anumita adresa specificata prin coordonate longitudine/latituine
+?	http://localhost:1234/webcamByContinent?continent=EU =>webcamuri de pe un continent specificat, in cazul asta:EUROPA
+?	http://localhost:1234/webcamsOrderdBy?sort=desc&orderby=popularity =>webcams sortate dupa popularitate
+?	http://localhost:1234/webcamByCountry?country="RO" =>webcams din romania
+?	http://localhost:1234/webcamList?limit=10 => 10 webcamuri
+?	http://localhost:1234/webcamByCategory?category="sunny" => toate webcamurile cu locuri insorite
+?	http://localhost:1234/getLocation => ar trebui sa iti afiseze locatia in functie de ip (IpV4) publica.
+
+
+
+

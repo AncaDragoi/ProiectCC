@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-image:url('../media/backgr3.jpg'); 
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.body{
+background-color: darkgrey;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.smallMarginTop{
+  margin-top: 25px;
+}
+
+.btnSize{
+  width: 50px;
+}
+
+.btnSize2{
+  margin-top:25px;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
